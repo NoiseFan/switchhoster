@@ -1,3 +1,5 @@
+name: 功能请求 | Feature Request
+description: 提出您的功能请求 | Suggest a feature for this project
 labels: ["feature"]
 body:
   - type: textarea
