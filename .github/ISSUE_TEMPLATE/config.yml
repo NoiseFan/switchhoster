@@ -1,0 +1,8 @@
+name: BUG Report | 问题反馈
+description: 报告一个问题 | Report a bug
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    attributes:
+      label: 问题描述 | Describe the bug
