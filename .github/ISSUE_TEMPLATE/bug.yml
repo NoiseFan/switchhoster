@@ -1,36 +1,36 @@
-name: 🐞 Bug
-description: File a bug/issue
-title: "[BUG] <title>"
+name: 问题反馈 | Bug
+description: 上报错误/反馈 | Report a bug or feedback
+title: "[BUG]"
 labels: ["Bug", "Needs Triage"]
 body:
   - type: checkboxes
     attributes:
-      label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the bug you encountered.
+      label: 是否存在此问题？| Is there an existing issue for this?
+      description: 请搜索以查看您遇到的bug是否已存在问题。| Please search to see if an issue already exists for the bug you encountered.
       options:
-        - label: I have searched the existing issues
+        - label: 我已经搜索了现有的问题 | I have searched the existing issues
           required: true
   - type: textarea
     attributes:
-      label: Current Behavior
-      description: A concise description of what you're experiencing.
+      label: 现状 | Current Behavior
+      description: 请简明描述你现在碰到的现象。| A concise description of what you're experiencing.
     validations:
       required: false
   - type: textarea
     attributes:
-      label: Expected Behavior
-      description: A concise description of what you expected to happen.
+      label: 期望结果 | Expected Behavior
+      description: 对你期望发生的事情的简洁描述。| A concise description of what you expected to happen.
     validations:
       required: false
   - type: textarea
     attributes:
-      label: Steps To Reproduce
-      description: Steps to reproduce the behavior.
+      label: 复现步骤 | Steps To Reproduce
+      description: 复现的步骤 | Steps to reproduce the behavior.
       placeholder: |
-        1. In this environment...
-        1. With this config...
-        1. Run '...'
-        1. See error...
+        1. 在什么环境下…… | In this environment...
+        2. 设置了什么内容 | With this config...
+        3. 执行了'...' | Run '...'
+        4. 看到了错误... | See error...
     validations:
       required: false
   - type: textarea
@@ -38,22 +38,21 @@ body:
       label: Environment
       description: |
         examples:
-          - **OS**: Ubuntu 20.04
-          - **Node**: 13.14.0
-          - **npm**: 7.6.3
+          - **操作系统 | OS**: Ubuntu 20.04
+          - **浏览器 | Browser** Chrome 136.0.7103.114
       value: |
         - OS:
-        - Node:
-        - npm:
+        - Browser:
       render: markdown
     validations:
       required: false
   - type: textarea
     attributes:
-      label: Anything else?
+      label: 还有其他的吗？| Anything else?
       description: |
-        Links? References? Anything that will give us more context about the issue you are encountering!
-
+        链接？引用？截图？任何会给我们更多关于你遇到的问题的背景!
+        Links? References? Screenshot? Anything that will give us more context about the issue you are encountering!
+        提示: 您可以附加图片或日志文件，单击输入框将其突出显示，然后将文件拖入。
         Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
     validations:
       required: false
